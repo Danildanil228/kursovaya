@@ -1,0 +1,19 @@
+﻿<Window x:Class="CarRentalApp.RenterReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Справка об арендаторе и его прокатах" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical" Margin="10">
+            <ComboBox Name="RenterComboBox" Width="200" Margin="5" DisplayMemberPath="FullName"/>
+            <Button Content="Показать" Width="150" Margin="5" Click="ShowRenterReportButton_Click"/>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Name="RenterReportStackPanel" Orientation="Vertical" Margin="10">
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

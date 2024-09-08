@@ -1,0 +1,20 @@
+﻿<Window x:Class="CarRentalApp.DeleteCarByIdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Удаление автомобиля по ID" MinHeight="300" MinWidth="200" MaxWidth="700" MaxHeight="500" Height="415" Width="336">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Label Content="Выберите ID автомобиля:" Margin="10"/>
+            <ComboBox Name="CarIdComboBox" Margin="10" SelectionChanged="CarIdComboBox_SelectionChanged"/>
+            <TextBlock Name="ValidationMessage" Foreground="Red" Margin="10"/>
+            <Button Content="Удалить" Margin="10" Click="DeleteButton_Click"/> 
+            </StackPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="CarRentalApp.RentalsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Аренды" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="RentalsDataGrid" AutoGenerateColumns="True" CanUserAddRows="True" CanUserDeleteRows="True"
+                  CellEditEnding="RentalsDataGrid_CellEditEnding" RowEditEnding="RentalsDataGrid_RowEditEnding" Margin="10"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Сохранить" Margin="5" Click="SaveButton_Click"/>
+            <Button Content="Удалить" Margin="5" Click="DeleteButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

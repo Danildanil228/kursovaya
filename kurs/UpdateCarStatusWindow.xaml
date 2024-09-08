@@ -1,0 +1,16 @@
+﻿<Window x:Class="CarRentalApp.UpdateCarStatusWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Обновление статуса автомобиля" MinHeight="300" MinWidth="200" MaxWidth="700" MaxHeight="500" Height="415" Width="336">
+    <Grid>
+        <StackPanel Margin="20">
+            <ComboBox x:Name="CarComboBox" Width="200" Margin="5" DisplayMemberPath="CarDisplay" SelectedValuePath="CarID"/>
+            <ComboBox x:Name="StatusComboBox" Width="200" Margin="5">
+                <ComboBoxItem Content="Свободна"/>
+                <ComboBoxItem Content="Занята"/>
+            </ComboBox>
+            <Button Content="Обновить" Width="200" Margin="5" Click="UpdateButton_Click"/>
+            <TextBlock x:Name="ValidationMessage" Foreground="Red" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

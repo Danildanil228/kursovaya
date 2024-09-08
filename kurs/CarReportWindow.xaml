@@ -1,0 +1,8 @@
+﻿<Window x:Class="CarRentalApp.CarReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Справка об автомобильном фонде" Height="450" Width="800" Background="#1b1e31" Foreground="White">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <UniformGrid Name="CarUniformGrid" Columns="2" Margin="10"/>
+    </ScrollViewer>
+</Window>
