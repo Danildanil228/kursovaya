@@ -1,0 +1,8 @@
+﻿<Window x:Class="CarRentalApp.RentersReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список арендаторов" Height="450" Width="800" Background="#1b1e31">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Name="RenterStackPanel" Margin="10"/>
+    </ScrollViewer>
+</Window>

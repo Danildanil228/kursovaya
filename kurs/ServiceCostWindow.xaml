@@ -1,0 +1,18 @@
+﻿<Window x:Class="CarRentalApp.ServiceCostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Рассчитать стоимость услуг" MinHeight="500" MaxHeight="570" MinWidth="300" MaxWidth="300">
+    <Grid Margin="10">
+        <StackPanel>
+            <ComboBox Name="CarComboBox" Margin="5" SelectionChanged="CarComboBox_SelectionChanged"/>
+            <DatePicker Name="StartDatePicker" Margin="5" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+            <DatePicker Name="EndDatePicker" Margin="5" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+            <Button Content="Рассчитать стоимость" Margin="5" Click="CalculateCostButton_Click"/>
+            <StackPanel Name="ResultPanel" Margin="5" Visibility="Collapsed">
+                <Image Name="CarImage" Width="200" Height="200" Margin="5"/>
+                <TextBlock Name="ResultTextBlock" FontSize="16" TextWrapping="Wrap"/>
+            </StackPanel>
+            <TextBlock Name="ErrorMessageTextBlock" Foreground="Red" Visibility="Collapsed" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

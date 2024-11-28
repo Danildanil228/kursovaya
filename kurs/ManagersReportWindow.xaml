@@ -1,0 +1,8 @@
+﻿<Window x:Class="CarRentalApp.ManagersReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список менеджеров" Height="450" Width="800" Background="#1b1e31">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Name="ManagersStackPanel" Margin="10"/>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,45 @@
+﻿<Window x:Class="CarRentalApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главное Окно" Height="450" Width="800"
+        Background="#1b1e31" Foreground="white" FontSize="13">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл" Foreground="white">
+                <MenuItem Header="Выход" Foreground="black" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="База данных" Foreground="White">
+                <MenuItem Header="Автомобили" Foreground="black" Click="Cars_Click"/>
+                <MenuItem Header="Арендаторы" Click="Renters_Click" Foreground="black"/>
+                <MenuItem Header="Менеджеры" Click="Managers_Click" Foreground="black"/>
+                <MenuItem Header="Аренды" Click="Rentals_Click" Foreground="black"/>
+            </MenuItem>
+            <MenuItem Header="Запросы" Foreground="White">
+                <MenuItem Header="Справка об автомобильном фонде" Foreground="black" Click="CarReport_Click"/>
+                <MenuItem Header="Услуги компании и их стоимость" Foreground="black" Click="ServiceReport_Click"/>
+                <MenuItem Header="Список арендаторов" Foreground="black" Click="RentersReport_Click"/>
+                <MenuItem Header="Список менеджеров" Foreground="black" Click="ManagersReport_Click"/>
+                <MenuItem Header="Список свободных автомобилей" Foreground="Black" Click="FreeCarsReport_Click"/>
+                <MenuItem Header="Расчет стоимости услуг" Foreground="Black" Click="ServiceCostReport_Click"/>
+                <MenuItem Header="Список занятых автомобилей" Foreground="Black" Click="OccupiedCarsReport_Click"/>
+                <MenuItem Header="Список автомобилей, которые будут свободны в заданные дни" Foreground="Black" Click="AvailableCarsReport_Click"/>
+                <MenuItem Header="Список арендаторов-должников" Foreground="Black" Click="DebtorsReport_Click"/>
+                <MenuItem Header="Справка об арендаторах" Foreground="black" Click="RenterReport_Click"/>
+            </MenuItem>
+            <MenuItem Header="Запросы на удаление и обновление" Foreground="white">
+                <MenuItem Header="Удаление арендатора по ID" Foreground="black" Click="DeleteRenterById_Click"/>
+                <MenuItem Header="Удалить автомобиль по ID" Foreground="black" Click="DeleteCarMenuItem_Click"/>
+                <MenuItem Header="Обновить контактную информацию арендатора" Foreground="Black" Click="UpdateRenterContactInfoMenuItem_Click"/>
+                <MenuItem Header="Обновление статуса автомобиля" Foreground="Black"  Click="UpdateCarStatusMenuItem_Click"/>
+            </MenuItem>
+
+        </Menu>
+        <Grid>
+            <TextBlock Text="Разработчик: Сильченков Данила Константинович. Студент, Калининградского бизнес-колледжа, 2 курса, группа 23-ИСП-2/1" 
+                       HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,156,0,0"/>
+            <TextBlock Text="Функциональное назначение программы: просмотр запросов, просмотр, редактирование базы данных о прокате автомобилей" 
+           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </DockPanel>
+</Window>
